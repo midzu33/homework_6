@@ -7,12 +7,12 @@ export default function Demo( ) {
         console.log('The count is:', count);
 
         return () => {
-            console.log('I am being cleaned up!');
+            console.log('you clicked! you clicked!');
         };
     }, [count]);
 
     return (
-        <div className='tutorial'>
+        <div className='count'>
             <h1>Count: {count}</h1>
             <button onClick={() => setCount(count - 1)}>
                 Decrement
